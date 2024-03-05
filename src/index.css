@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  width: 400px;
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+button {
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  background-color: hsl(0, 0%, 90%);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 75%);
+}
+
+.two-btn {
+  grid-column: span 2;
+}
+
+.display {
+  grid-column: span 4;
+  background-color: hsl(0, 0%, 90%);
+  border: 1px solid #ccc;
+  height: 75px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 15px;
+  font-size: 40px;
+}
